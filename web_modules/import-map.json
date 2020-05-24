@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "htm": "./htm.js",
+    "preact": "./preact.js",
+    "preact-render-to-string": "./preact-render-to-string.js"
+  }
+}
