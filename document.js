@@ -1,4 +1,4 @@
-export default function(file, body) {
+export default function(props, body) {
   return `<!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +9,7 @@ export default function(file, body) {
   <link rel="preload" href="/components/App.js" as="script" crossorigin>
   <link rel="preload" href="/web_modules/preact.js" as="script" crossorigin>
 
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
   <link href="/main.css" rel="stylesheet" />
 
   </head>
@@ -18,7 +19,7 @@ export default function(file, body) {
   ${body}
   </div><!-- root -->
   <script>
-    window.state = ${JSON.stringify(file, null, 2)};
+    window.state = ${JSON.stringify(props, null, 2)};
   </script>
   <script type="module" src="/main.js"></script>
 </body>
