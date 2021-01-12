@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "module": "main.js",
-  "type": "module",
   "scripts": {
     "start": "node ./main.js dev",
     "build": "npm install && node -r esm ./main.js"
